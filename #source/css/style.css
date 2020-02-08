@@ -775,18 +775,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px 15px 8px 10px; }
 
 .btn-more-sittings {
-  position: relative;
-  margin: 0 50px 0 0; }
-  .btn-more-sittings::before {
-    content: "";
-    position: absolute;
-    background-image: url("img/icon-svg/settings-search.svg");
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    width: 30px;
-    height: 30px;
-    top: -14px;
-    right: -10px; }
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-svg/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  top: -14px; }
 
 .title-result {
   width: 100%;
