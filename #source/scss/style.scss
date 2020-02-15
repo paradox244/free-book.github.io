@@ -534,7 +534,15 @@ $height-li: 50px;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 35px 35px 0 35px;
+
+    @media (max-width:375px) {
+        padding: 35px 50px 0 0px;
+    }
 }
+
+// .container-catalog-book {
+
+// }
 
 .book-card-li {
     position: relative;
