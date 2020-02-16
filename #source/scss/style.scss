@@ -535,7 +535,16 @@ $height-li: 50px;
     flex-wrap: wrap;
     padding: 35px 35px 0 35px;
 
+
+    @media (max-width:360px) {
+        padding: 35px 50px 0 0px;
+    }
+
     @media (max-width:375px) {
+        padding: 35px 50px 0 0px;
+    }
+
+    @media (max-width:398px) {
         padding: 35px 50px 0 0px;
     }
 }
@@ -566,6 +575,26 @@ $height-li: 50px;
 
     .annotation-book {
         display: none;
+    }
+
+    @media (width:360px) {
+        margin: 0 5% 3% 0;
+    }
+
+    @media (width:375px) {
+        margin: 0 4% 3% 0;
+    }
+
+    @media (width:398px) {
+        margin: 0 4% 3% 0;
+    }
+
+    @media (width:400px){
+        margin: 0 5% 3% 0;
+    }
+
+    @media (width:414px) {
+        margin: 0 5% 3% 0;
     }
 
 }
@@ -738,7 +767,6 @@ $height-li: 50px;
         top: 23px;
         right: 55px;
     }
-
 
     @media (width:398px) {
         top: 23px;
