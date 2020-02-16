@@ -537,15 +537,15 @@ $height-li: 50px;
 
 
     @media (max-width:360px) {
-        padding: 35px 50px 0 0px;
+        padding: 35px 0px 0 0px;
     }
 
     @media (max-width:375px) {
-        padding: 35px 50px 0 0px;
+        padding: 35px 0px 0 0px;
     }
 
     @media (max-width:398px) {
-        padding: 35px 50px 0 0px;
+        padding: 35px 0px 0 0px;
     }
 }
 
@@ -577,23 +577,23 @@ $height-li: 50px;
         display: none;
     }
 
-    @media (width:360px) {
+    @media (max-width:360px) {
         margin: 0 5% 3% 0;
     }
 
-    @media (width:375px) {
+    @media (max-width:375px) {
         margin: 0 4% 3% 0;
     }
 
-    @media (width:398px) {
+    @media (max-width:398px) {
         margin: 0 4% 3% 0;
     }
 
-    @media (width:400px){
+    @media (max-width:400px){
         margin: 0 5% 3% 0;
     }
 
-    @media (width:414px) {
+    @media (max-width:414px) {
         margin: 0 5% 3% 0;
     }
 
@@ -690,12 +690,16 @@ $height-li: 50px;
     padding: 21px 0 25px 30px;
     background-color: #E7E9ED;
 
-    @media (width:360px) {
-        padding: 21px 0 25px 17px;
+    @media (max-width:360px) {
+        padding: 21px 0 25px 0px;
     }
 
-    @media (width:414px) {
-        padding: 21px 0 25px 40px;
+    @media (max-width:414px) {
+        padding: 21px 0 25px 0px;
+    }
+
+    @media (max-width:415px) {
+        padding: 21px 0 25px 0px;
     }
 }
 
@@ -703,6 +707,14 @@ $height-li: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    @media (max-width:360px) {
+        padding: 0 0 0 20px;
+    }
+
+    @media (max-width:414px) {
+        padding: 0 0 0 20px;
+    }
 }
 
 .general-style-select {
@@ -756,31 +768,48 @@ $height-li: 50px;
         height: 30px;
         top: -14px;
         right: -10px;
+
+        @media (max-width:375px) {
+            top: 38px;
+            right: -5px;
+            margin: 0 0 0 0;
+        }
+
+        @media (max-width:405px) {
+            top: 38px;
+            right: 25px;
+            margin: 0 0 0 0;
+        }
     }
 
-    @media (width:360px) {
+    @media (max-width:360px) {
+        top: 37px;
+        right: -20px;
+        margin: 0 0 0 0;
+    }
+
+    @media (max-width:375px) {
         top: 23px;
         right: 55px;
+        margin: 0 0 0 0;
     }
 
-    @media (width:375px) {
-        top: 23px;
-        right: 55px;
-    }
-
-    @media (width:398px) {
+    @media (max-width:398px) {
         top: 23px;
         right: 35px;
+        margin: 0 0 0 0;
     }
 
-    @media (width:400px) {
+    @media (max-width:400px) {
         top: 23px;
         right: 35px;
+        margin: 0 0 0 0;
     }
 
-    @media (width:414px) {
-        top: 23px;
+    @media (max-width:414px) {
+        top: -27px;
         right: 35px;
+        margin: 0 0 0 0;
     }
 }
 
@@ -834,6 +863,26 @@ $height-li: 50px;
             color: #000;
             transition: all .3s ease;
         }
+
+        @media (max-width:360px) {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+
+        @media (max-width:375px) {
+            font-size: 15px;
+            padding: 6px 12px;
+        }
+
+        @media (max-width:414px) {
+            font-size: 15px;
+            padding: 6px 12px;
+        }
+
+        @media (max-width:460px) {
+            font-size: 15px;
+            padding: 6px 12px;
+        }
     }
 
     .pagination-link-active {
@@ -850,7 +899,29 @@ $height-li: 50px;
             background-color: #838591c4;
             transition: all .3s ease;
         }
+
+        @media (max-width:360px) {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+
+        @media (max-width:375px) {
+            font-size: 15px;
+            padding: 6px 12px;
+        }
+
+        @media (max-width:414px) {
+            font-size: 15px;
+            padding: 6px 12px;
+        }
+
+        @media (max-width:460px) {
+            font-size: 15px;
+            padding: 6px 12px;
+        }
+
     }
+
 }
 
 //==================================================================================================
