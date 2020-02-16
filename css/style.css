@@ -214,6 +214,8 @@ h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: 400; }
 
 @media (width: 375px) { .btn-more-sittings { top: 23px; right: 55px; } }
 
+@media (width: 398px) { .btn-more-sittings { top: 23px; right: 35px; } }
+
 @media (width: 400px) { .btn-more-sittings { top: 23px; right: 35px; } }
 
 @media (width: 414px) { .btn-more-sittings { top: 23px; right: 35px; } }
