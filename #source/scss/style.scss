@@ -254,6 +254,125 @@ $height-li: 50px;
     }
 }
 
+.user-link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 0 0 45px;
+
+    // .li-profile {
+    // }
+    // .li-message {
+    // }
+    // .li-library {
+    // }
+    // .li-add-book {
+    // }
+    // .li-exit {
+    // }
+
+    li:first-child {
+        padding: 0 0 0 0;
+    }
+    li {
+        position: relative;
+        padding: 19px 0 0 0;
+    }
+}
+
+.link-profile,
+.link-message,
+.link-library,
+.link-add-book,
+.link-add-book,
+.link-exit  {
+    font-family: $ff_roboto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: $white_color_ff;
+
+    &:hover {
+        color: #1fcaff;
+        transition: all .5s ease;
+    }
+    &:active {
+        color: #53576cc4;
+        transition: all .5s ease;
+    }
+}
+
+.link-profile::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/icon-svg/user-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 35px;
+    width: 32px;
+    height: 35px;
+    top: -6px;
+    left: -45px;
+    z-index: 10;
+}
+
+.link-message::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/icon-svg/message-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 35px;
+    width: 32px;
+    height: 35px;
+    top: 14px;
+    left: -45px;
+    z-index: 10;
+}
+
+.link-library::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/icon-svg/book-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 35px;
+    width: 32px;
+    height: 35px;
+    top: 14px;
+    left: -45px;
+    z-index: 10;
+}
+
+.link-add-book::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/icon-svg/add-book-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 35px;
+    width: 32px;
+    height: 35px;
+    top: 13px;
+    left: -45px;
+    z-index: 10;
+}
+
+.link-exit::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/icon-svg/exit.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 35px;
+    width: 32px;
+    height: 35px;
+    top: 14px;
+    left: -45px;
+    z-index: 10;
+}
+
+
 .popular-book {
 
     // .popular-book__widget
