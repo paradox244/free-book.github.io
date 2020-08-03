@@ -25,14 +25,14 @@ $pdd_title_aside: 12px 0 11px 30px;
 //==================================================================================================
 //(ASIDE)Боковая панель-Текст_книг
 $color_genre_ff: #bfbfbf;
-$fs_autor: 13px;
+$fs_author: 13px;
 $ln_genre: 15px;
 //==================================================================================================
 //(section)Основной контент книг
 $fs_content: 14px;
 $lh_content: 16px;
 $color_book: #000;
-$color_autor: #4B8091;
+$color_author: #4B8091;
 //==================================================================================================
 //(FOOTER)Для текста переменные
 $fs_footer: 13px;
@@ -431,7 +431,7 @@ $height-li: 50px;
     &__litRpg {
         font-family: $ff_roboto;
         color: $color_genre_ff;
-        font-size: $fs_autor;
+        font-size: $fs_author;
         line-height: $ln_genre;
     }
 }
@@ -442,10 +442,10 @@ $height-li: 50px;
     background-position: 11px center;
 }
 
-.autor-nick {
+.author-nick {
     font-family: $ff_roboto;
     color: $white_color_ff;
-    font-size: $fs_autor;
+    font-size: $fs_author;
     line-height: $ln_genre;
     font-weight: $f_weight;
 }
@@ -453,7 +453,7 @@ $height-li: 50px;
 .book-title {
     font-family: $ff_roboto;
     color: $white_color_ff;
-    font-size: $fs_autor;
+    font-size: $fs_author;
     line-height: $ln_genre;
     font-weight: $f_weight_b;
 }
@@ -570,22 +570,22 @@ $height-li: 50px;
     justify-content: space-between;
 }
 
-.text-autor-book {
+.text-author-book {
     display: flex;
     flex-direction: column;
 }
 
-.autor-initials {
+.author-initials {
     font-family: $ff_roboto;
     color: $color_genre_ff;
-    font-size: $fs_autor;
+    font-size: $fs_author;
     line-height: $ln_genre;
 }
 
 .comment-book-title {
     font-family: $ff_roboto;
     color: $white_color_ff;
-    font-size: $fs_autor;
+    font-size: $fs_author;
     line-height: $ln_genre;
     font-weight: $f_weight;
 }
@@ -599,7 +599,7 @@ $height-li: 50px;
 .time-comment {
     font-family: $ff_roboto;
     color: $color_genre_ff;
-    font-size: $fs_autor;
+    font-size: $fs_author;
     line-height: $ln_genre;
 }
 
@@ -612,14 +612,14 @@ $height-li: 50px;
     .prime-comments {
         font-family: $ff_roboto;
         color: $white_color_ff;
-        font-size: $fs_autor;
+        font-size: $fs_author;
         line-height: $ln_genre;
     }
 
     .our-comments {
         font-family: $ff_roboto;
         color: $white_color_ff;
-        font-size: $fs_autor;
+        font-size: $fs_author;
         line-height: $ln_genre;
     }
 }
@@ -776,7 +776,7 @@ $height-li: 50px;
     height: 18px;
 }
 
-.title-and-autor {
+.title-and-author {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -789,15 +789,15 @@ $height-li: 50px;
 
     .title-book {
         font-family: $ff_roboto;
-        color: $color_autor;
+        color: $color_author;
         font-size: $fs_content;
         line-height: $lh_content;
         font-weight: $f_weight;
     }
 }
 
-.autor-book-link {
-    .title-autor {
+.author-book-link {
+    .title-author {
         font-family: $ff_roboto;
         color: $color_book;
         font-size: $fs_content;
