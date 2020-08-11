@@ -17,6 +17,11 @@ sans-serif;
 $f_weight: 300;
 $f_weight_b: 500;
 //==================================================================================================
+//Общие переменые для вкладки boock-001.html
+$lh_112prc: 111.2%;
+$color_blue_links: #018AD7;
+$fs_book:13px;
+//==================================================================================================
 //(ASIDE)Боковая панель-Заголовок
 $bb_solid: 1.5px solid #1A202E;
 $fs_title: 15px;
@@ -1254,3 +1259,267 @@ $height-li: 50px;
 }
 
 //==================================================================================================
+
+// book-001.html стили
+
+.book-panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+
+    div,
+    button,
+    section,
+    a,
+    ul,
+    li,
+    h1,
+    h2,
+    h3,
+    p,
+    footer,
+    header{
+        outline: 1px solid red;
+    }
+
+    // .book-panel__inner-center-container
+
+    &__center-container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    //.book-panel___inner-content-box
+    &__inner-content-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 42px 0 0 0;
+    }
+
+    // .book-panel__detail-info-book
+
+    &__detail-info-book {
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        padding: 0 0 0 0;
+        margin: 0 0 0px 0;
+        background: rgba(224, 233, 241, 0.7);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    // .book-panel__aside-author-panel
+
+    &__aside-author-panel {
+        display: flex;
+        flex-direction: column;
+        width: 255px;
+        margin: 0 0 0 0;
+        background: rgba(224, 233, 241, 0.7);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    // .book-panel__cover-book
+
+    &__cover-book {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 0 0 0;
+        margin: 23px 0 35px 21px;
+    }
+
+    // .book-panel__link-cover
+
+    &__link-cover {
+    }
+
+    // .book-panel__img-cover
+
+    &__img-cover {
+    }
+
+    // .book-panel__button-download
+
+    &__button-download {
+        width: 230px;
+        background-color: #185D8F;
+        border-radius: 7px;
+        font-family: $ff_roboto;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 29px;
+        color: #fff;
+        margin: 23px 0 0 0;
+        padding: 8px 0 11px 0;
+    }
+
+    // .book-panel__detail-inner-info
+
+    &__detail-inner-info {
+        margin: 0 0 0 20px;
+        padding: 41px 0 0 0;
+    }
+
+    // .book-panel__book-headline
+
+    &__book-headline {
+        font-family: $ff_roboto;
+        font-size: 20px;
+        line-height: $lh_112prc;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+    }
+
+    // .book-panel__book-author
+
+    &__book-author {
+        font-family: $ff_roboto;
+        font-size: 20px;
+        line-height: $lh_112prc;
+        color: $color_blue_links;
+    }
+
+    // .book-panel__ul-genres-tags
+
+    &__ul-genres-tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px 0 10px 0;
+    }
+
+
+    &__li-tag-genres {
+        .style-links-tag {
+            font-family: $ff_roboto;
+            font-size: $fs_book;
+            line-height: $lh_112prc;
+            color: $color_blue_links;
+        }
+    }
+
+    // .book-panel__link-tag-fantasy
+    &__link-tag-fantasy {
+    }
+
+    // .book-panel__link-tag-popadanci
+    &__link-tag-popadanci {
+    }
+
+    // .book-panel__link-tag-magicworld
+    &__link-tag-magicworld {
+    }
+
+    // .book-panel__ul-book-info
+
+    &__ul-book-info {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 17px 0;
+    }
+
+    // .book-panel__li-cycle
+
+    &__li-cycle {
+    }
+
+    // .book-panel__span-text
+
+    &__span-text,
+    &__span-publication-date {
+        font-family: $ff_roboto;
+        font-size: $fs_book;
+        line-height: $lh_112prc;
+    }
+
+    // .book-panel__link-book-cycle
+
+    &__link-book-cycle {
+        font-family: $ff_roboto;
+        font-size: $fs_book;
+        line-height: $lh_112prc;
+        color: $color_blue_links;
+    }
+
+    // .book-panel__li-publication-date
+
+    &__li-publication-date {
+    }
+
+    // .book-panel__span-publication-date
+
+    &__span-publication-date {
+    }
+
+    // .book-panel__ul-stats
+
+    &__ul-stats {
+        display: flex;
+        flex-direction: row;
+    }
+
+    // .book-panel__li-book-status
+
+    &__li-book-status {
+    }
+
+    // .book-panel__span-book-status
+
+    &__span-book-status {
+        font-family: $ff_roboto;
+        font-size: $fs_book;
+        line-height: $lh_112prc;
+        background-color: #00B63E;
+        border-radius: 3px;
+        color: #fff;
+        padding: 4.5px 12px 4.5px 13px;
+        margin: 17px 0 0 0;
+    }
+
+    // .book-panel__li-browsing-book
+
+    &__li-browsing-book {
+    }
+
+    // .book-panel__span-browsing-book
+
+    &__span-browsing-book {
+    }
+
+    // .book-panel__li-like-book
+
+    &__li-like-book {
+    }
+
+    // .book-panel__span-like-book
+
+    &__span-like-book {
+    }
+
+    // .book-panel__annotation-book
+
+    &__annotation-book {
+        margin: 19px 20px 0 0;
+    }
+
+    // .book-panel__annotation-title
+
+    &__annotation-title {
+    }
+
+    // .book-panel__annotation-text
+
+    &__annotation-text {
+    }
+
+    // .book-panel__annotation-text-content
+
+    &__annotation-text-content {
+    }
+}
