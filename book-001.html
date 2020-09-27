@@ -14,8 +14,7 @@
         <header class="header">
             <div class="header-panel">
                 <div class="header-panel__heading">
-                    <a href="#" class="sidebar-btn">
-                    </a>
+                    <a href="#" class="sidebar-btn"></a>
                     <a href="index.html" class="heading-links">
                         <img src="img/logo.png" alt="Логотип Free-Book" width="160px" height="50px">
                     </a>
@@ -336,9 +335,8 @@
                         <div class="book-panel__detail-info-book">
                             <div class="book-panel__cover-book">
                                 <a href="#" class="book-panel__link-cover">
-                                    <img class="book-panel__img-cover" src="img/content-img/art-wallp-mag.png" width="350" height="462"></img>
+                                    <img class="book-panel__img-cover" src="img/content-img/art-wallp-mag-350х642.png" alt="Обложка книги - Мухоморы или как я ходил за ГРИБАМИ"></img>
                                 </a>
-                                <!-- <button class="book-panel__button-download">Скачать в fb2</button> -->
                             </div>
                             <div class="book-panel__detail-inner-info">
                                 <a href="" class="book-panel__book-author">Ромул Тит</a>
@@ -489,19 +487,121 @@
                     <div class="book-panel__inner-bottom-box">
                         <div class="book-panel__form-placeholder-comments">
                             <form class="book-panel__form-text" action="#">
-                                <div class="book-panel__placeholder-icon-user"></div>
-                                <img src="img/avatar-img/icon-avatar.png" alt="Иконка аватра" width="50" height="50">
-                                <div class="book-panel__inner-box-texteria">
-                                    <textarea id="texteria-input" class="book-panel__texteria-input" name="texteria-input" placeholder="Написать комментарий">
-
+                                <div class="book-panel__wrapper-placeholder-icon">
+                                    <img src="img/avatar-img/icon-avatar.png" class="book-panel__icon-avatar" alt="Иконка аватра" width="50" height="50">
+                                </div>
+                                <div class="book-panel__inner-box-textarea">
+                                    <textarea id="textarea-input" class="book-panel__textarea-input" name="textarea-input" placeholder="Написать комментарий">
                                     </textarea>
                                 </div>
                                 <div class="book-panel__inner-box-submit">
-                                    <input class="book-panel__input-submit" type="submit" value="Ввод">
+                                    <button class="book-panel__button-submit" id="send">
+                                    </button>
+                                    <!-- <input class="book-panel__input-submit" type="submit" value="Ввод"> -->
                                 </div>
                             </form>
                         </div>
                         <div class="book-panel__comments-column">
+                            <div class="book-panel__comment-wrapper">
+                                <div class="book-panel__comment-avatar">
+                                    <a href="#" class="book-panel__a-avatar-user">
+                                        <img class="book-panel__img-avatar" src="img/avatar-img/avatar-morrou.png" alt="Аватар Морроу" width="50" height="50">
+                                    </a>
+                                </div>
+                                <div class="book-panel__comment-text">
+                                    <ul class="book-panel__ul-comment-structure">
+                                        <li class="book-panel__li-title-username">
+                                            <a href="#" class="book-panel__link-username">Морроу</a>
+                                            <time datetime="2020-20-08T9:49">20.08.2020 9:49</time>
+                                        </li>
+                                        <li class="book-panel__li-content-text">
+                                            <p class="book-panel__p-comment-text">
+                                                Хорошая книга, пополнит мою коллекцию прочитанных книг.
+                                                ( Я прочитал Война и Мир, Преступление и Наказание, Повелитель, и это произведение)
+                                                удачи автору ведь писать тяжело. Помню в десять лет писал рассказ пришло вдохновение
+                                                на писал страниц десять тетрадных и вдохновение ушло и я впал в ступор.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="book-panel__comment-wrapper">
+                                <div class="book-panel__comment-avatar">
+                                    <a href="#" class="book-panel__a-avatar-user">
+                                        <img class="book-panel__img-avatar" src="img/avatar-img/avatar-slizaren.png" alt="Аватар Слизарен Хентаевич" width="50" height="50">
+                                    </a>
+                                </div>
+                                <div class="book-panel__comment-text">
+                                    <ul class="book-panel__ul-comment-structure">
+                                        <li class="book-panel__li-title-username">
+                                            <a href="#" class="book-panel__link-username">Слизарен Хентаевич</a>
+                                            <time datetime="2020-20-08T10:12">20.08.2020 10:12</time>
+                                        </li>
+                                        <li class="book-panel__li-content-text">
+                                            <p class="book-panel__p-comment-text">
+                                                Книга понравилась, написано неплохо.
+                                                Не без огрехов, но лучше чем 50% произведений
+                                                А вот потом у меня просто ступор пошёл. Я ещё понял, какую книгу (по порядку событий)
+                                                надо читать второй, а далее, сколько ни смотрел, так и не разобрался.
+                                                Автор, вы нумерацию книг по какому принципу делали? Логика извращённая какая-то.
+                                                Поэтому к сожалению пришлось отказаться от этой серии.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="book-panel__comment-wrapper">
+                                <div class="book-panel__comment-avatar">
+                                    <a href="#" class="book-panel__a-avatar-user">
+                                        <img class="book-panel__img-avatar" src="img/avatar-img/avatar-nikita.png" alt="Аватар Никита везде побрита" width="50" height="50">
+                                    </a>
+                                </div>
+                                <div class="book-panel__comment-text">
+                                    <ul class="book-panel__ul-comment-structure">
+                                        <li class="book-panel__li-title-username">
+                                            <a href="#" class="book-panel__link-username">Никита везде побрита</a>
+                                            <time datetime="2020-20-08T10:56">20.08.2020 10:56</time>
+                                        </li>
+                                        <li class="book-panel__li-content-text">
+                                            <p class="book-panel__p-comment-text">
+                                                По-моему скромному мнению - одна из лучших серий этого жанра.
+                                                Недочёты есть, но где ж их нет) Сюжет интересный, полный тайн и загадок,
+                                                которые раскрываются по ходу сюжета, и добавляются новые так,
+                                                что это захватывает. В общем, я советую к прочтению)
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="book-panel__comment-wrapper">
+                                <div class="book-panel__comment-avatar">
+                                    <a href="#" class="book-panel__a-avatar-user">
+                                        <img class="book-panel__img-avatar" src="img/avatar-img/avatar-rita.png" alt="Аватар Рита Скитер" width="50" height="50">
+                                    </a>
+                                </div>
+                                <div class="book-panel__comment-text">
+                                    <ul class="book-panel__ul-comment-structure">
+                                        <li class="book-panel__li-title-username">
+                                            <a href="#" class="book-panel__link-username">Рита Скитер</a>
+                                            <time datetime="2020-20-08T18:47">20.08.2020 18:49</time>
+                                        </li>
+                                        <li class="book-panel__li-content-text">
+                                            <p class="book-panel__p-comment-text">
+                                                Книгу читать только начала, но уже не могу оторваться!
+                                                А как увидела инфу по скидке, а потом еще и получила 3
+                                                тома по промокодам после покупки,
+                                                мой внутренний хомяк вообще в обморок упал от счастья! :)
+                                                Благодаря рекламе в первый раз я отложила книгу себе в запасы,
+                                                а после того, как не могла вспомнить, где же я ее видела и что это за книга была,
+                                                вообще ей как родной обрадовалась. Спасибо,что ее много!
+                                                Книга завлекла - ох уж эта месть, тут она прям явно хочет обогнать льды
+                                                Арктики по своей холодности, прям самое то. Побегу читать дальше,
+                                                нетерпится вновь погрузиться в мир приключений и ярких эмоций!
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="book-panel__comment-wrapper">
                                 <div class="book-panel__comment-avatar">
                                     <a href="#" class="book-panel__a-avatar-user">
@@ -680,6 +780,7 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 </body>
 

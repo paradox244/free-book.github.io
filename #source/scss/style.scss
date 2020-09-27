@@ -222,7 +222,7 @@ $height-li: 50px;
     overflow: hidden;
     flex: 0 0 20.4%;
     min-height: 1600px;
-    background-color: #1A202E;
+    background-color: #171D2B;
 }
 
 .user {
@@ -1306,6 +1306,7 @@ $height-li: 50px;
     &__detail-info-book {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 900px;
         padding: 0 0 0 0;
         margin: 0 0 0px 0;
@@ -1331,6 +1332,7 @@ $height-li: 50px;
         align-items: center;
         padding: 0 0 0 0;
         margin: 23px 21px 35px 0px;
+        flex: 0 0 350px;
 }
 
     // .book-panel__link-cover
@@ -1341,7 +1343,9 @@ $height-li: 50px;
     // .book-panel__img-cover
 
     &__img-cover {
-}
+        width: 100%;
+        height: auto;
+    }
 
     // // .book-panel__button-download
 
@@ -1354,7 +1358,7 @@ $height-li: 50px;
     line-height: 29px;
     color: #fff;
     width: 150px;
-    margin: 23px 0 0 0;
+    margin: 23px 0 35px 0;
     padding: 10px 0px 10px 0px;
     text-align: center;
     cursor: pointer;
@@ -1377,6 +1381,7 @@ $height-li: 50px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        max-width: 509px;
         margin: 41px 0 0 20px;
         padding: 0 0 0 0;
 }
@@ -1598,17 +1603,39 @@ $height-li: 50px;
         &__form-text {
             display: flex;
             flex-flow: row wrap;
-
         }
 
-        // .book-panel__inner-box-texteria
+        // .book-panel__wrapper-placeholder-icon
 
-        &__inner-box-texteria {
+        &__wrapper-placeholder-icon {
+            margin: 0 10px 0 0;
         }
 
-        // .book-panel__texteria-input
+        //.book-panel__icon-avatar
+        &__icon-avatar {
+        }
 
-        &__texteria-input {
+        // .book-panel__inner-box-textarea
+
+        &__inner-box-textarea {
+        }
+
+        // .book-panel__textarea-input
+
+        &__textarea-input {
+            width: 840px;
+            min-height: 50px;
+            height: 50px;
+            font-family: $ff_roboto;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 110%;
+            vertical-align: baseline;
+            resize: vertical;
+            color: #fff;
+            padding: 10px 5px 5px 10px;
+            background-color: rgba(196, 196, 196, 0.24);
+            border-radius: 10px;
         }
 
         // .book-panel__inner-box-submit
@@ -1619,14 +1646,35 @@ $height-li: 50px;
         // .book-panel__input-submit
 
         &__input-submit {
+
+        }
+
+        &__button-submit {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        &__button-submit::before {
+            content: "";
+            position: absolute;
+            display: block;
+            background-image: url("../img/icon-svg/button-icon.svg");
+            background-repeat: no-repeat;
+            background-size: 40px 40px;
+            width: 45px;
+            height: 45px;
+            top: -6px;
+            left: 19px;
         }
 
 		// .book-panel__comments-column
 
 		&__comments-column {
+            max-height: 780px;
             padding: 20px 20px 5px 20px;
             border: 1px solid #878795;
-            margin: 35px 0 20px 0;
+            margin: 35px 0 29px 0;
             border-radius: 6px;
             display: flex;
             flex-wrap: wrap;
@@ -1638,7 +1686,7 @@ $height-li: 50px;
 		&__comment-wrapper {
             display: flex;
             flex-direction: row;
-            padding: 0 0 15px 0;
+            margin: 0 0 25px 0;
 		}
 
 		// .book-panel__comment-avatar
@@ -1739,7 +1787,7 @@ $height-li: 50px;
     // .book-panel__pagination-comments
 
     &__pagination-comments {
-        margin: 0 0 35px 0;
+        margin: 0 0 29px 0;
     }
 
     // .book-panel__ul-pagination
